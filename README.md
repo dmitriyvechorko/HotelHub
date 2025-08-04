@@ -4,13 +4,14 @@ RESTful API for hotel management. Allows creating, viewing, searching hotels, ad
 - Java 17
 - Spring Boot 3
 - Spring Data JPA
-- H2 Database (встроенная, для разработки)
-- Liquibase (миграции базы данных)
+- H2 Database (embedded, for development)
+- Liquibase (database migrations)
 - Lombok
-- Swagger (OpenAPI 3.0) для документации API
+- Swagger (OpenAPI 3.0) for API documentation
+- Maven (build tool)
 ## Requirements
-- Java 17 или выше
-- Maven 3.8.1 или выше
+- Java 17 or higher
+- Maven 3.8.1 or higher
 ## Running the Application
 1. Clone the repository:
    ```bash
