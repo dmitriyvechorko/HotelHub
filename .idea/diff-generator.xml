@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DiffGenerationConfig">
+    <option name="sourceModelValue" value="HotelHub:entityManagerFactory" />
+    <option name="targetDbValue" value="429cd9e1-9be4-4465-beeb-1b2d5592bae8" />
+  </component>
+</project>
