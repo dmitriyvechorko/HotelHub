@@ -1,6 +1,6 @@
 # HotelHub API
-RESTful API для управления отелями. Позволяет создавать, просматривать, искать отели, добавлять удобства, а также получать статистику.
-## Технологии
+RESTful API for hotel management. Allows creating, viewing, searching hotels, adding amenities, and getting statistical reports.
+## Technologies
 - Java 17
 - Spring Boot 3
 - Spring Data JPA
@@ -8,31 +8,31 @@ RESTful API для управления отелями. Позволяет со�
 - Liquibase (миграции базы данных)
 - Lombok
 - Swagger (OpenAPI 3.0) для документации API
-## Требования
+## Requirements
 - Java 17 или выше
 - Maven 3.8.1 или выше
-## Запуск приложения
-1. Клонируйте репозиторий:
+## Running the Application
+1. Clone the repository:
    ```bash
    git clone https://github.com/ваш-проект/hotelhub.git
    cd hotelhub
    ```
-2. Соберите проект с помощью Maven:
+2. Build the project with Maven:
    ```bash
    mvn clean install
    ```
-3. Запустите приложение:
+3. Run the application:
    ```bash
    mvn spring-boot:run
    ```
-Приложение будет доступно по адресу: `http://localhost:8092`
-## Документация API
-После запуска приложения документация доступна через Swagger UI:
+The application will be available at: `http://localhost:8092`
+## API Documentation
+After starting the application, documentation is available through Swagger UI:
 ```bash
 http://localhost:8092/swagger-ui/index.html
    ```
-## Примеры запросов
-### Создание отеля
+## Example Requests
+### Create a Hotel
 ```bash
 curl -X POST "http://localhost:8092/property-view/hotels" \
   -H "Content-Type: application/json" \
@@ -57,15 +57,15 @@ curl -X POST "http://localhost:8092/property-view/hotels" \
     }
   }'
 ```
-### Получение списка отелей
+### Get List of Hotels
 ```bash
 curl -X GET "http://localhost:8092/property-view/hotels"
 ```
-### Поиск отелей по городу
+### Search Hotels by City
 ```bash
 curl -X GET "http://localhost:8092/property-view/search?city=Minsk"
 ```
-### Добавление удобств к отелю
+### Add Amenities to a Hotel
 ```bash
 curl -X POST "http://localhost:8092/property-view/hotels/1/amenities" \
   -H "Content-Type: application/json" \
